@@ -1,0 +1,20 @@
+<div class="paddingLeft15 paddingRight15 paddingTop10 parentCardStyle postCreateCardColor">
+    <ng-container *ngIf="currentUser.id">
+        <h2 class="pageTitleColor">{{pageTitle | uppercase}}</h2>
+        <div>
+            <div class="marginBottom10">
+                <input type="text" placeholder="Title" id="createPostTitle" class="input" [formControl]="postName">
+            </div>
+            <div class="marginBottom10">
+                <!-- <mat-form-field appearance="outline">
+                <mat-label>Content</mat-label> -->
+                <textarea id="createPostContent" placeholder="Content" class="input minHeight75"
+                    [formControl]="postDescription"></textarea>
+                <!-- </mat-form-field> -->
+            </div>
+            <div>
+                <button class="floatRight buttonStyle" (click)="savePost()">Save</button>
+            </div>
+        </div>
+    </ng-container>
+</div>

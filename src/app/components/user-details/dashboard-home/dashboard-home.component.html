@@ -1,0 +1,19 @@
+<div>
+    <div id="header">
+        <mat-toolbar color="accent" style="height: 50px; justify-content: center; background-color: #ededed;">
+            <span class="colorGrey fontSize20">{{title | uppercase}}</span>
+        </mat-toolbar>
+    </div>
+
+    <div id="body" class="row paddingLeft15 paddingRight15 marginRight0">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <app-user-list></app-user-list>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <app-post-list></app-post-list>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <app-post-create></app-post-create>
+        </div>
+    </div>
+</div>

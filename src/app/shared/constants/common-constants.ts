@@ -1,0 +1,1 @@
+export const ENDPOINT_MAP = {USERS: 'users', POSTS: 'posts'};

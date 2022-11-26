@@ -1,0 +1,8 @@
+<div class="paddingLeft15 paddingRight15 paddingTop10 parentCardStyle postListCardColor">
+    <ng-container *ngIf="currentUser.id">
+        <h2 class="pageTitleColor">{{pageTitle | uppercase}} of {{currentUser.name}}</h2>
+        <div *ngFor="let post of userPosts">
+            <app-post-view [post]="post"></app-post-view>
+        </div>
+    </ng-container>
+</div>

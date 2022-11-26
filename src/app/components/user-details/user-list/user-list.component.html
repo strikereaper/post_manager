@@ -1,0 +1,10 @@
+<div class="parentCardStyle userListCardColor">
+    <ng-container *ngIf="userList.length>0">
+        <h2 class="pageTitleColor">{{pageTitle | uppercase}}</h2>
+        <div>
+            <div *ngFor="let user of userList">
+                <app-user-profile-view [userDetails]="user" (userClicked)="userClicked($event)"></app-user-profile-view>
+            </div>
+        </div>
+    </ng-container>
+</div>
