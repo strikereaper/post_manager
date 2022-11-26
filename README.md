@@ -18,18 +18,18 @@ src/
     app/
         components/ --> all the components being used by app
             shared/ -->  the reusable components 
-                post-view/ --> Card component for a single post (called by post-																		list)
+                post-view/ --> Card component for a single post (called by post-list)
                 
-                user-profile-view/ --> card component for a single user (called by user-																		list)
+                user-profile-view/ --> card component for a single user (called by user-list)
                     
             user-details/
                 dashboard-home/ --> parent component which calls all other component
                     
-                post-create/ -->  component for creating a component  (called by 																		       dashboard-home)
+                post-create/ -->  component for creating a component  (called by dashboard-home)
                     
-                post-list/ -->  component for listing post of current user (called by 																		      dashboard-home)
+                post-list/ -->  component for listing post of current user (called by dashboard-home)
                    
-                user-list/ --> component for listing all users (called by 																		         dashboard-home)
+                user-list/ --> component for listing all users (called by dashboard-home)
                     
         shared/
             constants/ --> all constant files
@@ -40,11 +40,11 @@ src/
             services/
                 base-service/ --> service for making all rest calls
                  
-                rest-service/ --> service for fetching or posting data using various 										endpoints,utilizes base-service.ts 
+                rest-service/ --> service for fetching or posting data using various endpoints,utilizes base-service.ts 
                     
                 url-service/ --> returns base url for, used by base-service
                     
-                user-service/ --> various operations for user and their posts. Heart of 									communication between components using behaviour 										subjects.
+                user-service/ --> various operations for user and their posts. Heart of communication between components using behaviour subjects.
                     
     assets/
         css_styles/ -> globally used css styles
